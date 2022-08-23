@@ -54,12 +54,15 @@ h1{
 
 .menu li{
     display: flex;
-    color: white;
+    
     padding: 20px;
-    text-decoration: none;
+    
     transition: all .2s;
 }
-
+.menu a{
+    text-decoration: none;
+    color: white;    
+}
 .menu li:hover{
     background-color: #005691;
     text-decoration: none;
