@@ -57,6 +57,13 @@ h1{
     color: white;
     padding: 20px;
     text-decoration: none;
+    transition: all .2s;
+}
+
+.menu li:hover{
+    background-color: #005691;
+    text-decoration: none;
+    border-radius: 5px;
 }
 
 .hola{
@@ -83,7 +90,6 @@ h1{
     top: 120px;
     right: 8%;  */
 }
-
 .grid-hola{
     /* display: inline-block; */
     width: 100%;
@@ -123,6 +129,10 @@ h1{
     top: 250px;
     left: 20%; */
 }
+.boton-hola:hover{
+    transform: scale(1.1);
+}
+
 .div-boton-hola{
     display: flex;
     width: 70%;
