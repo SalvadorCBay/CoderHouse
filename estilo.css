@@ -59,11 +59,6 @@ h1{
     text-decoration: none;
 }
 
-.menu li:hover{
-    background-color: #005691;
-    text-decoration: none;
-}
-
 .hola{
     font-family: 'Mouse Memoirs', sans-serif;
     color: #005691;    
