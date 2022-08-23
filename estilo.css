@@ -1,0 +1,473 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+p{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1rem;
+}
+main{
+    background-color: #E8F1F5;
+}
+.header {
+    height: 80px;
+    padding: 10px;
+    background-color: #094166;
+    display: flex;
+    justify-content: space-between;
+}
+
+h2, h3, li{
+    font-family: 'Mouse Memoirs', sans-serif;
+}
+h1{
+    font-size: 2.5rem;
+}
+
+h2{
+    font-size: 2rem;
+}
+h3{
+    font-size: 1.5rem;
+}
+h1{
+    font-family: 'Mouse Memoirs', sans-serif;
+    color: #005691;
+}
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    width: 100%;
+    text-decoration: none;
+    padding: 0px 0px 20px 0px;
+}
+
+.menu li{
+    display: flex;
+    color: white;
+    padding: 20px;
+    text-decoration: none;
+}
+
+.menu li:hover{
+    background-color: #005691;
+    text-decoration: none;
+}
+
+.hola{
+    font-family: 'Mouse Memoirs', sans-serif;
+    color: #005691;    
+    padding: 20px 0px 0px 20px;
+    font-size: 3rem;
+    /* position: absolute;
+    top: 100px;
+    left: 6.5%; */
+}
+.grid-foto-mia{
+    display: flex;
+    grid-area: foto-mia;
+    justify-content: center;
+    align-items: center;
+}
+.foto-mia{
+    padding: 20px;
+    width: 75%;
+    /* height: 75%; */
+    border-radius: 100%;
+    /* position: absolute;
+    top: 120px;
+    right: 8%;  */
+}
+
+.grid-hola{
+    /* display: inline-block; */
+    width: 100%;
+    height: 350px;
+    display: grid;
+    grid-template-columns: .5fr 2.5fr .5fr 1.5fr .5fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+        ".... hola .... foto-mia .... " ;
+}
+.div-hola{
+    display: flex;
+    flex-direction: column;
+    grid-area: hola;
+    justify-content: center;
+}
+.grid-hola h2{
+    /* padding: 20px; */
+    font-family: 'Mouse Memoirs', sans-serif;
+    color: #4CB1F6;
+    padding: 10px 0px 0px 20px;
+    font-size: 2.5rem;
+    /* position: absolute;
+    top: 170px;
+    left: 6.5%; */
+}
+
+.boton-hola{
+    padding: 5px;
+    border-radius: 5px;
+    font-family: 'Josefin Sans', sans-serif;
+    cursor: pointer;
+    background-color: #4CB1F6;
+    color:#094166;
+    border-color: #094166;
+    /* position: absolute;
+    top: 250px;
+    left: 20%; */
+}
+.div-boton-hola{
+    display: flex;
+    width: 70%;
+    padding: 20px;
+    justify-content: center;
+}
+
+.footer {
+    height: 150px;
+    padding: 20px;
+    border-top: 5px #094166 solid;
+}
+
+.footer h2{
+    display: flex;
+    justify-content: center;
+}
+
+.redes{
+    display: flex;
+    justify-content: space-around;
+    height: 40px;
+}
+
+.dropdownContent{
+    float: right;
+}
+.contacto{
+    text-align: start;
+}
+.contacto h2{
+    font-size: 1rem;
+}
+.contacto img{
+    width: 20px;
+}
+.contacto h1{
+    text-align: center;
+}
+.testimonio, .duracion{
+    padding: 20px;
+}
+.duracion{
+    text-align: center;
+}
+.h2-testimonios{
+    text-align: center;
+}
+.testimonios{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+        "testimonio1 testimonio2 testimonio3";
+    /* text-align: center; */
+}
+.testimonio{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.foto-testimonio{
+    width: 10em;
+}
+.testimonio1{
+    grid-area: testimonio1;
+}
+.testimonio2{
+    grid-area: testimonio2;
+}
+.testimonio3{
+    grid-area: testimonio3;
+}
+.h2-asesoramiento{
+    padding: 20px;
+    text-align: center;
+}
+
+.faq{
+    height: 300px;
+    padding: 20px;
+}  
+
+.faq h2 {
+    padding: 20px;
+    text-align: center;
+}
+
+.faq .estas{
+    text-align: center;
+}
+
+
+.preguntas{
+    padding: 20px;
+    border: 1px;
+    border-color: black;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.pregunta{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sobre-mi h1{
+    text-align: center;
+    padding: 20px;
+}
+.derecha1{
+    grid-area: derecha1;
+}
+.derecha2{
+    grid-area: derecha2;
+}
+.izquierda{
+    grid-area: izquierda;
+}
+.grid-sobre-mi{
+    display: grid;
+    grid-template-columns: .5fr 1fr .5fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+        ".... derecha1 ...."
+        ".... izquierda ...."
+        ".... derecha2 ....";
+}
+
+.derecha, .izquierda{
+    /* , .div-explicacion */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+/* .derecha p, .izquierda p, .div-explicacion p{
+    width: 30%;
+    /* padding: 20px; */
+/* } */
+.div-explicacion{
+    grid-area: div-explicacion;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.grid-explicacion{
+    display: grid;
+    grid-template-columns: .5fr 1fr .5fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: ".... div-explicacion ....";
+}
+.derecha img, .izquierda img, .foto-explicacion{
+    padding: 20px;
+}
+.izquierda{
+    flex-direction: row-reverse;
+}
+.duracion1{
+    grid-area: duracion1;
+}
+.duracion3{
+    grid-area: duracion3;
+}
+.duracion6{
+    grid-area: duracion6;
+}
+.grid-duraciones{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: ".... duracion1 duracion3 duracion6 ....";
+}
+.h1-asesoramiento{
+    text-align: center;
+    padding: 20px;
+}
+.whatsapp-asesoramiento{
+    text-align: center;
+    padding: 20px;
+}
+.duracion{
+    text-align: center;
+}
+.duracion h3{
+    display: flex;
+    justify-content: center;
+}
+.h1-planes{
+    text-align: center;
+    padding: 20px;
+}
+.explicacion-planes{
+    padding: 20px;
+    justify-content: center;
+    text-align: center;
+    grid-area: explicacion-planes;
+}
+.grid-planes{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: ".... explicacion-planes ....";
+}
+
+/* .plan-nutricion{
+    display: flex;
+    justify-content: space-around;
+} */
+/* .div-nutricion h2{
+    text-align: center;
+} */
+.div-entrenamiento, .div-nutricion{
+    text-align: center;
+}
+.div-entrenamiento img, .plan-nutricion{
+    padding: 20px;
+    justify-content: center;
+}
+.h2-nutricion, .h2-entrenamiento{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 20px;
+}
+.plan-nutricion1{
+    grid-area: plan-nutricion1;
+}
+.plan-nutricion2{
+    grid-area: plan-nutricion2;
+}
+.plan-nutricion3{
+    grid-area: plan-nutricion3;
+}
+.grid-nutricion{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: ".... plan-nutricion1 plan-nutricion2 plan-nutricion3 ....";
+}
+.plan-entrenamiento1{
+    grid-area: plan-entrenamiento1;
+}
+.plan-entrenamiento2{
+    grid-area: plan-entrenamiento2;
+}.plan-entrenamiento3{
+    grid-area: plan-entrenamiento3;
+}
+.grid-entrenamiento{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: ".... plan-entrenamiento1 plan-entrenamiento2 plan-entrenamiento3 ....";
+    padding-bottom: 20px;
+}
+.plan-entrenamiento, .plan-nutricion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 768px){
+    .grid-hola{
+        height: 700px;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "foto-mia" "hola";
+    }
+    .foto-mia{
+        width: 50%;
+    }
+    .div-hola{
+        align-items: center;
+    }
+    .grid-explicacion{
+        grid-template-columns: 1fr;
+        grid-template-areas: "div-explicacion";
+    }
+    .explicacion{
+        padding-left: 20px;
+    }    
+    .grid-duraciones{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: "duracion1 duracion3 duracion6";
+    }
+    .grid-planes{
+        grid-template-columns: 1fr;
+        grid-template-areas: "explicacion-planes";
+    }
+    .grid-nutricion{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: "plan-nutricion1 plan-nutricion2 plan-nutricion3";
+    }
+    .grid-entrenamiento{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: "plan-entrenamiento1 plan-entrenamiento2 plan-entrenamiento3";
+    }
+}
+@media screen and (max-width: 480px) {
+    .menu{
+        grid-area: menu;
+        flex-wrap: wrap;
+    }
+    .logo{
+        grid-area: logo;
+        display: flex;
+        justify-content: center;
+    } 
+    .header{
+        display: grid;
+        height: 180px;
+        width: 100%;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr;
+        grid-template-areas: "logo" "menu";
+    }
+    .foto-mia{
+        width: 70%;
+    }
+    .pregunta1{
+        grid-area: pregunta1;
+    }
+    .pregunta2{
+        grid-area: pregunta2;
+    }
+    .pregunta3{
+        grid-area: pregunta3;
+    }
+    .pregunta4{
+        grid-area: pregunta4;
+    }
+    .preguntas{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "pregunta1 pregunta2" "pregunta3 pregunta4";
+        gap: 20px;
+    }
+    
+}
