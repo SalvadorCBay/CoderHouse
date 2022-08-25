@@ -2,6 +2,13 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    line-height: 1;
+}
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: bold;
+    line-height: 1;
 }
 a{
     text-decoration: none;
@@ -17,13 +24,13 @@ p{
 main{
     background-color: #E8F1F5;
 }
-.header {
+/* .header {
     height: 80px;
     padding: 10px;
     background-color: #094166;
     display: flex;
     justify-content: space-between;
-}
+} */
 
 h2, h3, li{
     font-family: 'Mouse Memoirs', sans-serif;
@@ -43,27 +50,31 @@ h1{
     color: #005691;
 }
 
-.menu{
+.navbar{
     display: flex;
     flex-direction: row;
+    justify-content: flex-end;
     list-style: none;
     width: 100%;
     text-decoration: none;
-    padding: 0px 0px 20px 0px;
+    padding: 0px 0px 0px 0px;
+}
+.navbar-toggler{
+    color: white;
 }
 
-.menu li{
+.nav-item{
     display: flex;
     
     padding: 20px;
     
     transition: all .2s;
 }
-.menu a{
+.nav-link, .nav-link:hover{
     text-decoration: none;
     color: white;    
 }
-.menu li:hover{
+.nav-item:hover{
     background-color: #005691;
     text-decoration: none;
     border-radius: 5px;
@@ -439,7 +450,7 @@ h1{
     }
 }
 @media screen and (max-width: 480px) {
-    .menu{
+    /* .menu{
         grid-area: menu;
         flex-wrap: wrap;
     }
@@ -455,7 +466,7 @@ h1{
         grid-template-rows: 1fr 1fr;
         grid-template-columns: 1fr;
         grid-template-areas: "logo" "menu";
-    }
+    } */
     .foto-mia{
         width: 70%;
     }
