@@ -153,6 +153,9 @@ h1{
     padding: 20px;
     justify-content: center;
 }
+.accordion-item, .accordion-header, .accordion-button{
+    background-color: #E8F1F5;  
+}
 
 .footer {
     height: 150px;
@@ -229,7 +232,7 @@ h1{
 }
 
 .faq{
-    height: 300px;
+    height: 500px;
     padding: 20px;
 }  
 
@@ -330,6 +333,7 @@ h1{
 .whatsapp-asesoramiento{
     text-align: center;
     padding: 20px;
+    margin: 0px;
 }
 .duracion{
     text-align: center;
