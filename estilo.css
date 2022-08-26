@@ -189,6 +189,14 @@ h1{
 .contacto h1{
     text-align: center;
 }
+.redes-contacto{
+    padding-bottom: 30px;
+}
+.redes-contacto img{
+    width: 30px;
+    align-items: center;
+    padding-top: 5px;
+}
 .testimonio, .duracion{
     padding: 20px;
 }
@@ -474,7 +482,7 @@ h1{
     .foto-mia{
         width: 70%;
     }
-    .pregunta1{
+    /* .pregunta1{
         grid-area: pregunta1;
     }
     .pregunta2{
@@ -492,5 +500,5 @@ h1{
         grid-template-areas: "pregunta1 pregunta2" "pregunta3 pregunta4";
         gap: 20px;
     }
-    
+     */
 }

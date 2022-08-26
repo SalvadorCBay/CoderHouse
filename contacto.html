@@ -39,12 +39,32 @@
     </header>
     <main class="contacto">
         <h1>Contacto</h1>
-        <h2>Podés contactarme por mis redes sociales</h2>
-        <!--Acá va a haber un formulario de contacto tambien-->
-        <a href="https://www.facebook.com/pitucastrobay"><img src="./media/facebook.png" alt="Logo de Facebook"></a>
-        <a href="https://www.instagram.com/pitucastrobay"><img src="./media/instagram.png" alt="Logo de Instagram"></a>
-        <a href="https://wa.me/+543517032626/"><img src="./media/whatsapp.png" alt="Logo de Whatsapp"></a>
-        <a href="mailto:salvadorcastrobay@gmail.com"><img src="./media/email.png" alt="logo de email"></a>
+        <section class="container">
+            <div class="row">
+                <div class="col-md-6 redes-contacto">
+                    <h2>Podés contactarme por mis redes sociales</h2>
+                    <a href="https://www.facebook.com/pitucastrobay"><img src="./media/facebook.png" alt="Logo de Facebook"></a>
+                    <a href="https://www.instagram.com/pitucastrobay"><img src="./media/instagram.png" alt="Logo de Instagram"></a>
+                    <a href="https://wa.me/+543517032626/"><img src="./media/whatsapp.png" alt="Logo de Whatsapp"></a>
+                    <a href="mailto:salvadorcastrobay@gmail.com"><img src="./media/email.png" alt="logo de email"></a>
+                </div>
+                <div class="col-md-6">
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Nombre">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">E-mail</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="E-mail">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Consulta</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary mb-3">Enviar</button>
+                </div>
+            </div>
+        </section>
     </main>
     <footer class="footer">
         <h2>Contacto</h2>
