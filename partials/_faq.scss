@@ -1,0 +1,17 @@
+.faq{
+    height: 500px;
+    padding: 20px;
+    text-align: center;
+    
+    h2 {
+        padding: 20px;
+        text-align: center;
+    }
+    .estas{
+        text-align: center;
+    }
+    .accordion-item, .accordion-header, .accordion-button{
+    background-color: $color-fondo;  
+}
+}  
+

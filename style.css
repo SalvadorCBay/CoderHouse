@@ -1,0 +1,166 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  line-height: 1;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: bold;
+  line-height: 1;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+p {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1rem;
+}
+
+main {
+  background-color: #E8F1F5;
+}
+
+h2, h3, li {
+  font-family: "Mouse Memoirs", sans-serif;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h1 {
+  font-family: "Mouse Memoirs", sans-serif;
+  color: #005691;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  list-style: none;
+  width: 100%;
+  text-decoration: none;
+  padding: 0px 0px 0px 0px;
+}
+.navbar .navbar-toggler {
+  color: #FFFFFF;
+}
+.navbar .nav-item {
+  display: flex;
+  padding: 20px;
+  transition: all 0.2s;
+}
+.navbar .nav-item .nav-link, .navbar .nav-item .nav-link:hover {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+.navbar .nav-item:hover {
+  background-color: #005691;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.grid-hola {
+  width: 100%;
+  height: 450px;
+  display: grid;
+  grid-template-columns: 0.5fr 2.5fr 0.5fr 1.5fr 0.5fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: ".... hola .... foto-mia .... ";
+}
+.grid-hola .div-hola {
+  display: flex;
+  flex-direction: column;
+  grid-area: hola;
+  justify-content: center;
+}
+.grid-hola .div-hola h1 {
+  font-family: "Mouse Memoirs", sans-serif;
+  color: #005691;
+  padding: 20px 0px 0px 20px;
+  font-size: 3rem;
+}
+.grid-hola .div-hola h2 {
+  font-family: "Mouse Memoirs", sans-serif;
+  color: #4CB1F6;
+  padding: 10px 0px 0px 20px;
+  font-size: 2.5rem;
+}
+.grid-hola .div-hola .div-boton-hola {
+  display: flex;
+  width: 70%;
+  padding: 20px;
+  justify-content: center;
+}
+.grid-hola .div-hola .div-boton-hola .boton-hola {
+  padding: 5px;
+  border-radius: 5px;
+  font-family: "Josefin Sans", sans-serif;
+  cursor: pointer;
+  background-color: #4CB1F6;
+  color: #005691;
+  border-color: #005691;
+}
+.grid-hola .div-hola .div-boton-hola .boton-hola:hover {
+  transform: scale(1.1);
+}
+.grid-hola .grid-foto-mia {
+  display: flex;
+  grid-area: foto-mia;
+  justify-content: center;
+  align-items: center;
+}
+.grid-hola .grid-foto-mia .foto-mia {
+  padding: 20px;
+  width: 75%;
+  border-radius: 100%;
+}
+
+.faq {
+  height: 500px;
+  padding: 20px;
+  text-align: center;
+}
+.faq h2 {
+  padding: 20px;
+  text-align: center;
+}
+.faq .estas {
+  text-align: center;
+}
+.faq .accordion-item, .faq .accordion-header, .faq .accordion-button {
+  background-color: #E8F1F5;
+}
+
+.footer {
+  height: 150px;
+  padding: 20px;
+  border-top: 5px #005691 solid;
+}
+.footer h2 {
+  display: flex;
+  justify-content: center;
+}
+.footer .redes {
+  display: flex;
+  justify-content: space-around;
+  height: 40px;
+}/*# sourceMappingURL=style.css.map */

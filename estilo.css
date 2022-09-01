@@ -1,182 +1,4 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    line-height: 1;
-}
-.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
-    margin-top: 0;
-    margin-bottom: 0;
-    font-weight: bold;
-    line-height: 1;
-}
-a{
-    text-decoration: none;
-}
-img {
-    max-width: 100%;
-    max-height: 100%;
-}
-p{
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 1rem;
-}
-main{
-    background-color: #E8F1F5;
-}
-/* .header {
-    height: 80px;
-    padding: 10px;
-    background-color: #094166;
-    display: flex;
-    justify-content: space-between;
-} */
 
-h2, h3, li{
-    font-family: 'Mouse Memoirs', sans-serif;
-}
-h1{
-    font-size: 2.5rem;
-}
-
-h2{
-    font-size: 2rem;
-}
-h3{
-    font-size: 1.5rem;
-}
-h1{
-    font-family: 'Mouse Memoirs', sans-serif;
-    color: #005691;
-}
-
-.navbar{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    list-style: none;
-    width: 100%;
-    text-decoration: none;
-    padding: 0px 0px 0px 0px;
-}
-.navbar-toggler{
-    color: white;
-}
-
-.nav-item{
-    display: flex;
-    
-    padding: 20px;
-    
-    transition: all .2s;
-}
-.nav-link, .nav-link:hover{
-    text-decoration: none;
-    color: white;    
-}
-.nav-item:hover{
-    background-color: #005691;
-    text-decoration: none;
-    border-radius: 5px;
-}
-
-.hola{
-    font-family: 'Mouse Memoirs', sans-serif;
-    color: #005691;    
-    padding: 20px 0px 0px 20px;
-    font-size: 3rem;
-    /* position: absolute;
-    top: 100px;
-    left: 6.5%; */
-}
-.grid-foto-mia{
-    display: flex;
-    grid-area: foto-mia;
-    justify-content: center;
-    align-items: center;
-}
-.foto-mia{
-    padding: 20px;
-    width: 75%;
-    /* height: 75%; */
-    border-radius: 100%;
-    /* position: absolute;
-    top: 120px;
-    right: 8%;  */
-}
-.grid-hola{
-    /* display: inline-block; */
-    width: 100%;
-    height: 350px;
-    display: grid;
-    grid-template-columns: .5fr 2.5fr .5fr 1.5fr .5fr;
-    grid-template-rows: 1fr;
-    grid-template-areas:
-        ".... hola .... foto-mia .... " ;
-}
-.div-hola{
-    display: flex;
-    flex-direction: column;
-    grid-area: hola;
-    justify-content: center;
-}
-.grid-hola h2{
-    /* padding: 20px; */
-    font-family: 'Mouse Memoirs', sans-serif;
-    color: #4CB1F6;
-    padding: 10px 0px 0px 20px;
-    font-size: 2.5rem;
-    /* position: absolute;
-    top: 170px;
-    left: 6.5%; */
-}
-
-.boton-hola{
-    padding: 5px;
-    border-radius: 5px;
-    font-family: 'Josefin Sans', sans-serif;
-    cursor: pointer;
-    background-color: #4CB1F6;
-    color:#094166;
-    border-color: #094166;
-    /* position: absolute;
-    top: 250px;
-    left: 20%; */
-}
-.boton-hola:hover{
-    transform: scale(1.1);
-}
-
-.div-boton-hola{
-    display: flex;
-    width: 70%;
-    padding: 20px;
-    justify-content: center;
-}
-.accordion-item, .accordion-header, .accordion-button{
-    background-color: #E8F1F5;  
-}
-
-.footer {
-    height: 150px;
-    padding: 20px;
-    border-top: 5px #094166 solid;
-}
-
-.footer h2{
-    display: flex;
-    justify-content: center;
-}
-
-.redes{
-    display: flex;
-    justify-content: space-around;
-    height: 40px;
-}
-
-.dropdownContent{
-    float: right;
-}
 .contacto{
     text-align: start;
 }
@@ -209,6 +31,7 @@ h1{
 .testimonios{
     display: grid;
     width: 100%;
+    height: 300px;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     grid-template-areas: 
@@ -224,6 +47,7 @@ h1{
 }
 .foto-testimonio{
     width: 10em;
+    margin: 10px
 }
 .testimonio1{
     grid-area: testimonio1;
@@ -237,34 +61,6 @@ h1{
 .h2-asesoramiento{
     padding: 20px;
     text-align: center;
-}
-
-.faq{
-    height: 500px;
-    padding: 20px;
-}  
-
-.faq h2 {
-    padding: 20px;
-    text-align: center;
-}
-
-.faq .estas{
-    text-align: center;
-}
-
-
-.preguntas{
-    padding: 20px;
-    border: 1px;
-    border-color: black;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-}
-.pregunta{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 .sobre-mi h1{

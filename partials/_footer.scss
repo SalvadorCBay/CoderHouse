@@ -1,0 +1,20 @@
+.footer {
+    height: 150px;
+    padding: 20px;
+    border-top: 5px $color-primario solid;
+    
+    h2{
+        display: flex;
+        justify-content: center;
+    }
+    
+    .redes{
+    display: flex;
+    justify-content: space-around;
+    height: 40px;
+    }
+}
+
+
+
+
