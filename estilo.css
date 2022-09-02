@@ -183,7 +183,7 @@
 }
 
 @media screen and (max-width: 768px){
-    .grid-hola{
+   .grid-hola{
         height: 700px;
         grid-template-rows: 1fr 1fr;
         grid-template-columns: 1fr;
