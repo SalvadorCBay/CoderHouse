@@ -9,12 +9,31 @@
     }
     
     .redes{
-    display: flex;
-    justify-content: space-around;
-    height: 40px;
+        display: flex;
+        justify-content: space-around;
+        height: 40px;
+        align-items: center;
+    
+        .fa-regular, .fa-brands{
+            color: black;
+            padding-top: 20px;
+        }
+    }
+
+$redes: (
+    facebook: blue,
+    instagram: pink,
+    whatsapp: green,
+    envelope: red
+);
+
+@each $redsocial, $colorhover in $redes {
+    .fa-#{$redsocial}:hover {
+        color: $colorhover;
     }
 }
-
-
-
+.fa-facebook:hover{
+    color: map-get($redes, facebook);
+}
+}
 

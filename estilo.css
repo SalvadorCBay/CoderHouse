@@ -1,64 +1,8 @@
 
-.contacto{
-    text-align: start;
-}
-.contacto h2{
-    font-size: 1rem;
-}
-.contacto img{
-    width: 20px;
-}
-.contacto h1{
-    text-align: center;
-}
-.redes-contacto{
-    padding-bottom: 30px;
-}
-.redes-contacto img{
-    width: 30px;
-    align-items: center;
-    padding-top: 5px;
-}
-
 .h2-asesoramiento{
     padding: 20px;
     text-align: center;
 }
-
-.sobre-mi h1{
-    text-align: center;
-    padding: 20px;
-}
-.derecha1{
-    grid-area: derecha1;
-}
-.derecha2{
-    grid-area: derecha2;
-}
-.izquierda{
-    grid-area: izquierda;
-}
-.grid-sobre-mi{
-    display: grid;
-    grid-template-columns: .5fr 1fr .5fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas: 
-        ".... derecha1 ...."
-        ".... izquierda ...."
-        ".... derecha2 ....";
-}
-
-.derecha, .izquierda{
-    /* , .div-explicacion */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-}
-/* .derecha p, .izquierda p, .div-explicacion p{
-    width: 30%;
-    /* padding: 20px; */
-/* } */
 .div-explicacion{
     grid-area: div-explicacion;
     display: flex;
@@ -71,12 +15,10 @@
     grid-template-rows: 1fr;
     grid-template-areas: ".... div-explicacion ....";
 }
-.derecha img, .izquierda img, .foto-explicacion{
+.foto-explicacion{
     padding: 20px;
 }
-.izquierda{
-    flex-direction: row-reverse;
-}
+
 .duracion1{
     grid-area: duracion1;
 }

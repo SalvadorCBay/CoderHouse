@@ -197,4 +197,73 @@ h1 {
   display: flex;
   justify-content: space-around;
   height: 40px;
+  align-items: center;
+}
+.footer .redes .fa-regular, .footer .redes .fa-brands {
+  color: black;
+  padding-top: 20px;
+}
+.footer .fa-facebook:hover {
+  color: blue;
+}
+.footer .fa-instagram:hover {
+  color: pink;
+}
+.footer .fa-whatsapp:hover {
+  color: green;
+}
+.footer .fa-envelope:hover {
+  color: red;
+}
+.footer .fa-facebook:hover {
+  color: blue;
+}
+
+.contacto {
+  text-align: start;
+}
+.contacto h2 {
+  font-size: 1rem;
+}
+.contacto h1 {
+  text-align: center;
+}
+.contacto .redes-contacto {
+  padding-bottom: 30px;
+  display: block;
+  text-align: center;
+  text-justify: center;
+}
+
+.sobre-mi h1 {
+  text-align: center;
+  padding: 20px;
+}
+.sobre-mi .grid-sobre-mi {
+  display: grid;
+  grid-template-columns: 0.5fr 1fr 0.5fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: ".... derecha1 ...." ".... izquierda ...." ".... derecha2 ....";
+}
+.sobre-mi .grid-sobre-mi .derecha, .sobre-mi .grid-sobre-mi .izquierda {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+.sobre-mi .grid-sobre-mi .derecha img, .sobre-mi .grid-sobre-mi .izquierda img {
+  padding: 20px;
+}
+.sobre-mi .grid-sobre-mi .izquierda {
+  flex-direction: row-reverse;
+}
+.sobre-mi .grid-sobre-mi .derecha1 {
+  grid-area: derecha1;
+}
+.sobre-mi .grid-sobre-mi .derecha2 {
+  grid-area: derecha2;
+}
+.sobre-mi .grid-sobre-mi .izquierda {
+  grid-area: izquierda;
 }/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,44 @@
+    @mixin flex($direction, $justify, $align){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+.sobre-mi{
+    h1{
+        text-align: center;
+        padding: 20px;
+    }
+    .grid-sobre-mi{
+    display: grid;
+    grid-template-columns: .5fr 1fr .5fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+        ".... derecha1 ...."
+        ".... izquierda ...."
+        ".... derecha2 ....";
+    .derecha{
+    @include flex(row, center, center );
+    padding: 20px;
+    
+    img{
+        padding: 20px;
+    }
+    }
+    .izquierda{
+        @extend .derecha;
+        flex-direction: row-reverse;
+    }
+    .derecha1{
+    grid-area: derecha1;
+    }
+    .derecha2{
+        grid-area: derecha2;
+    }
+    .izquierda{
+        grid-area: izquierda;
+    }
+
+}
+}
+
