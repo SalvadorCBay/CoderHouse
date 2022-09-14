@@ -1,17 +1,39 @@
 .contacto{
-    text-align: start;
+    text-align: center;
     
     h2{
-        font-size: 1rem;
+        font-size: 2rem;
+        padding: 10px;
+        text-align: center;
     }
     h1{
         text-align: center;
     }
     .redes-contacto{
         padding-bottom: 30px;
-        display: block;
+        display: flex;
+        flex-direction: column;
         text-align: center;
-        text-justify: center;
+
+        i{
+            padding-top: 10px;
+        }
+
+        .fa-brands, .fa-regular{
+            color: black;
+        }
+        .fa-whatsapp:hover{
+            color: green;
+        }
+        .fa-instagram:hover{
+            color: pink;
+        }
+        .fa-facebook:hover{
+            color: blue;
+        }
+        .fa-envelope:hover{
+            color: red;
+        }
     }
 }
 

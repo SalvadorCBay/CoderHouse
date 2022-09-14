@@ -1,0 +1,64 @@
+
+.h1-asesoramiento{
+    text-align: center;
+    padding: 20px;
+}
+.grid-explicacion{
+    display: grid;
+    grid-template-columns: .5fr 1fr .5fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: ".... div-explicacion ....";
+
+    .div-explicacion{
+        grid-area: div-explicacion;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        .foto-explicacion{
+            padding: 20px;
+        }
+    }
+}
+.h2-asesoramiento{
+    padding: 20px;
+    text-align: center;
+}
+.grid-duraciones{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: ".... duracion1 duracion3 duracion6 ....";
+
+    .duracion{
+        text-align: center;
+        padding: 20px;
+
+        h3{
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    .duracion1{
+        grid-area: duracion1;
+    }
+    .duracion3{
+        grid-area: duracion3;
+    }
+    .duracion6{
+        grid-area: duracion6;
+    }
+}
+
+.whatsapp-asesoramiento{
+    text-align: center;
+    padding: 20px;
+    margin: 0px;
+}
+
+
+
+
+
+

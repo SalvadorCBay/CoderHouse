@@ -1,0 +1,68 @@
+@media screen and (max-width: 768px){
+    .grid-hola{
+         height: 700px;
+         grid-template-rows: 1fr 1fr;
+         grid-template-columns: 1fr;
+         grid-template-areas: 
+         "foto-mia" "hola";
+         
+        .div-hola{
+           align-items: center;
+     }
+     .foto-mia{
+         width: 50%;
+     }
+     }
+
+     .grid-explicacion{
+         grid-template-columns: 1fr;
+         grid-template-areas: "div-explicacion";
+         
+        .explicacion{
+            padding-left: 20px;
+     } 
+     }
+    .testimonios{
+         height: 850px;
+         grid-template-columns: 1fr;
+         grid-template-rows: 1fr;
+         grid-template-areas: "testimonio1" "testimonio2" "testimonio3";
+     } 
+     .grid-duraciones{
+         height: 900px;
+         grid-template-columns: 1fr;
+         grid-template-rows: 1fr 1fr 1fr;
+         grid-template-areas: "duracion1" "duracion3" "duracion6";
+     }
+     .grid-planes{
+         grid-template-columns: 1fr;
+         grid-template-areas: "explicacion-planes";
+     }
+     .grid-nutricion{
+         height: 900px;
+         grid-template-columns: 1fr;
+         grid-template-rows: 1fr 1fr 1fr;
+         grid-template-areas: "plan-nutricion1" "plan-nutricion2" "plan-nutricion3";
+     }
+     .grid-entrenamiento{
+         height: 900px;
+         grid-template-columns: 1fr;
+         grid-template-rows: 1fr 1fr 1fr;
+         grid-template-areas: "plan-entrenamiento1" "plan-entrenamiento2" "plan-entrenamiento3";
+     }
+
+     .contacto .redes-contacto{
+         display: block;
+         text-align: center;
+     }
+ 
+ }
+ @media screen and (max-width: 480px) {
+     .foto-mia{
+         width: 70%;
+     }
+     .testimonios{
+         height: 1050px;
+     }
+     
+ }

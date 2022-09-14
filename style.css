@@ -149,15 +149,19 @@ h1 {
 .faq .accordion-item, .faq .accordion-header, .faq .accordion-button {
   background-color: #E8F1F5;
 }
+.faq .accordion-item {
+  text-align: start;
+}
 
 .h2-testimonios {
   text-align: center;
+  padding-top: 50px;
 }
 
 .testimonios {
   display: grid;
   width: 100%;
-  height: 300px;
+  height: 400px;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr;
   grid-template-areas: "testimonio1 testimonio2 testimonio3";
@@ -169,6 +173,9 @@ h1 {
   justify-content: center;
   align-items: center;
   padding: 20px;
+}
+.testimonios .testimonio img {
+  padding: 10px;
 }
 .testimonios .testimonio .foto-testimonio {
   width: 10em;
@@ -220,19 +227,39 @@ h1 {
 }
 
 .contacto {
-  text-align: start;
+  text-align: center;
 }
 .contacto h2 {
-  font-size: 1rem;
+  font-size: 2rem;
+  padding: 10px;
+  text-align: center;
 }
 .contacto h1 {
   text-align: center;
 }
 .contacto .redes-contacto {
   padding-bottom: 30px;
-  display: block;
+  display: flex;
+  flex-direction: column;
   text-align: center;
-  text-justify: center;
+}
+.contacto .redes-contacto i {
+  padding-top: 10px;
+}
+.contacto .redes-contacto .fa-brands, .contacto .redes-contacto .fa-regular {
+  color: black;
+}
+.contacto .redes-contacto .fa-whatsapp:hover {
+  color: green;
+}
+.contacto .redes-contacto .fa-instagram:hover {
+  color: pink;
+}
+.contacto .redes-contacto .fa-facebook:hover {
+  color: blue;
+}
+.contacto .redes-contacto .fa-envelope:hover {
+  color: red;
 }
 
 .sobre-mi h1 {
@@ -266,4 +293,194 @@ h1 {
 }
 .sobre-mi .grid-sobre-mi .izquierda {
   grid-area: izquierda;
+}
+
+.h1-asesoramiento {
+  text-align: center;
+  padding: 20px;
+}
+
+.grid-explicacion {
+  display: grid;
+  grid-template-columns: 0.5fr 1fr 0.5fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: ".... div-explicacion ....";
+}
+.grid-explicacion .div-explicacion {
+  grid-area: div-explicacion;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.grid-explicacion .div-explicacion .foto-explicacion {
+  padding: 20px;
+}
+
+.h2-asesoramiento {
+  padding: 20px;
+  text-align: center;
+}
+
+.grid-duraciones {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: ".... duracion1 duracion3 duracion6 ....";
+}
+.grid-duraciones .duracion {
+  text-align: center;
+  padding: 20px;
+}
+.grid-duraciones .duracion h3 {
+  display: flex;
+  justify-content: center;
+}
+.grid-duraciones .duracion1 {
+  grid-area: duracion1;
+}
+.grid-duraciones .duracion3 {
+  grid-area: duracion3;
+}
+.grid-duraciones .duracion6 {
+  grid-area: duracion6;
+}
+
+.whatsapp-asesoramiento {
+  text-align: center;
+  padding: 20px;
+  margin: 0px;
+}
+
+.h1-planes {
+  text-align: center;
+  padding: 20px;
+}
+
+.shadow {
+  border-radius: 10%;
+}
+
+.grid-planes {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: ".... explicacion-planes ....";
+}
+.grid-planes .explicacion-planes {
+  padding: 20px;
+  justify-content: center;
+  text-align: center;
+  grid-area: explicacion-planes;
+}
+
+.h2-nutricion, .h2-entrenamiento {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding: 20px;
+}
+
+.grid-nutricion {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: ".... plan-nutricion1 plan-nutricion2 plan-nutricion3 ....";
+}
+.grid-nutricion .plan-nutricion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.grid-nutricion .plan-nutricion1 {
+  grid-area: plan-nutricion1;
+}
+.grid-nutricion .plan-nutricion2 {
+  grid-area: plan-nutricion2;
+}
+.grid-nutricion .plan-nutricion3 {
+  grid-area: plan-nutricion3;
+}
+
+.grid-entrenamiento {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: ".... plan-entrenamiento1 plan-entrenamiento2 plan-entrenamiento3 ....";
+  padding-bottom: 20px;
+}
+.grid-entrenamiento .plan-entrenamiento {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.grid-entrenamiento .plan-entrenamiento1 {
+  grid-area: plan-entrenamiento1;
+}
+.grid-entrenamiento .plan-entrenamiento2 {
+  grid-area: plan-entrenamiento2;
+}
+.grid-entrenamiento .plan-entrenamiento3 {
+  grid-area: plan-entrenamiento3;
+}
+
+@media screen and (max-width: 768px) {
+  .grid-hola {
+    height: 700px;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas: "foto-mia" "hola";
+  }
+  .grid-hola .div-hola {
+    align-items: center;
+  }
+  .grid-hola .foto-mia {
+    width: 50%;
+  }
+  .grid-explicacion {
+    grid-template-columns: 1fr;
+    grid-template-areas: "div-explicacion";
+  }
+  .grid-explicacion .explicacion {
+    padding-left: 20px;
+  }
+  .testimonios {
+    height: 850px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "testimonio1" "testimonio2" "testimonio3";
+  }
+  .grid-duraciones {
+    height: 900px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "duracion1" "duracion3" "duracion6";
+  }
+  .grid-planes {
+    grid-template-columns: 1fr;
+    grid-template-areas: "explicacion-planes";
+  }
+  .grid-nutricion {
+    height: 900px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "plan-nutricion1" "plan-nutricion2" "plan-nutricion3";
+  }
+  .grid-entrenamiento {
+    height: 900px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "plan-entrenamiento1" "plan-entrenamiento2" "plan-entrenamiento3";
+  }
+  .contacto .redes-contacto {
+    display: block;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 480px) {
+  .foto-mia {
+    width: 70%;
+  }
+  .testimonios {
+    height: 1050px;
+  }
 }/*# sourceMappingURL=style.css.map */

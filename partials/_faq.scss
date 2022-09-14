@@ -13,5 +13,8 @@
     .accordion-item, .accordion-header, .accordion-button{
     background-color: $color-fondo;  
 }
+    .accordion-item{
+        text-align: start;
+    }
 }  
 

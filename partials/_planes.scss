@@ -1,0 +1,76 @@
+.h1-planes{
+    text-align: center;
+    padding: 20px;
+}
+.shadow{
+    border-radius: 10%;
+}
+
+.grid-planes{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: ".... explicacion-planes ....";
+
+    .explicacion-planes{
+        padding: 20px;
+        justify-content: center;
+        text-align: center;
+        grid-area: explicacion-planes;
+    }
+}
+.h2-nutricion, .h2-entrenamiento{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 20px;
+}
+.grid-nutricion{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: ".... plan-nutricion1 plan-nutricion2 plan-nutricion3 ....";
+
+    .plan-nutricion{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .plan-nutricion1{
+        grid-area: plan-nutricion1;
+    }
+    .plan-nutricion2{
+        grid-area: plan-nutricion2;
+    }
+    .plan-nutricion3{
+        grid-area: plan-nutricion3;
+    }
+    
+}
+.grid-entrenamiento{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: ".... plan-entrenamiento1 plan-entrenamiento2 plan-entrenamiento3 ....";
+    padding-bottom: 20px;
+    
+    .plan-entrenamiento{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .plan-entrenamiento1{
+        grid-area: plan-entrenamiento1;
+    }
+    .plan-entrenamiento2{
+        grid-area: plan-entrenamiento2;
+    }.plan-entrenamiento3{
+        grid-area: plan-entrenamiento3;
+    }
+}
+
+
+
+
+
+
