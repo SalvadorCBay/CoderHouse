@@ -13,14 +13,30 @@
          width: 50%;
      }
      }
-
+     .grid-sobre-mi{
+        height: 1100px;
+        grid-template-columns: .25fr 1fr .25fr;
+        grid-template-rows: .5fr .5fr .5fr;
+        grid-template-areas: "derecha1""izquierda1""derecha2";
+        .derecha, .izquierda{
+            height: fit-content;
+        }
+        .none{
+            display: none;
+        }
+     }
      .grid-explicacion{
+         height: 150px;
+         grid-template-rows: 1fr;
          grid-template-columns: 1fr;
-         grid-template-areas: "div-explicacion";
+         grid-template-areas: "p-explicacion";
          
-        .explicacion{
-            padding-left: 20px;
+        .p-explicacion{
+            padding: 20px;
      } 
+        .foto-explicacion{
+            display: none;
+        }
      }
     .testimonios{
          height: 850px;
@@ -64,5 +80,12 @@
      .testimonios{
          height: 1050px;
      }
-     
+     .grid-sobre-mi{
+        height: 1400px;
+     }
+ }
+ @media screen and (max-width:400px){
+    .grid-sobre-mi{
+        height: 1600px;
+    }
  }

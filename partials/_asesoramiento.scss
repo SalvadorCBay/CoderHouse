@@ -14,9 +14,12 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        
+        .p-explicacion{
+            grid-area: p-explicacion;
+        }
         .foto-explicacion{
-            padding: 20px;
+            margin: 10px;
+            grid-area: foto-explicacion;
         }
     }
 }

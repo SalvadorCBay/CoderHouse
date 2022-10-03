@@ -59,6 +59,7 @@ h1 {
   width: 100%;
   text-decoration: none;
   padding: 0px 0px 0px 0px;
+  background-color: #094166;
 }
 .navbar .navbar-toggler {
   color: #FFFFFF;
@@ -174,9 +175,6 @@ h1 {
   align-items: center;
   padding: 20px;
 }
-.testimonios .testimonio img {
-  padding: 10px;
-}
 .testimonios .testimonio .foto-testimonio {
   width: 10em;
   margin: 10px;
@@ -280,7 +278,7 @@ h1 {
   padding: 20px;
 }
 .sobre-mi .grid-sobre-mi .derecha img, .sobre-mi .grid-sobre-mi .izquierda img {
-  padding: 20px;
+  margin: 10px;
 }
 .sobre-mi .grid-sobre-mi .izquierda {
   flex-direction: row-reverse;
@@ -293,6 +291,9 @@ h1 {
 }
 .sobre-mi .grid-sobre-mi .izquierda {
   grid-area: izquierda;
+}
+.sobre-mi .quien-soy h3, .sobre-mi .motivo h3, .sobre-mi .estudios h3 {
+  padding-bottom: 10px;
 }
 
 .h1-asesoramiento {
@@ -312,8 +313,12 @@ h1 {
   justify-content: center;
   align-items: center;
 }
+.grid-explicacion .div-explicacion .p-explicacion {
+  grid-area: p-explicacion;
+}
 .grid-explicacion .div-explicacion .foto-explicacion {
-  padding: 20px;
+  margin: 10px;
+  grid-area: foto-explicacion;
 }
 
 .h2-asesoramiento {
@@ -358,6 +363,10 @@ h1 {
 
 .shadow {
   border-radius: 10%;
+}
+
+.plan:hover {
+  transform: scale(1.1);
 }
 
 .grid-planes {
@@ -436,12 +445,31 @@ h1 {
   .grid-hola .foto-mia {
     width: 50%;
   }
-  .grid-explicacion {
-    grid-template-columns: 1fr;
-    grid-template-areas: "div-explicacion";
+  .grid-sobre-mi {
+    height: 1100px;
+    grid-template-columns: 0.25fr 1fr 0.25fr;
+    grid-template-rows: 0.5fr 0.5fr 0.5fr;
+    grid-template-areas: "derecha1" "izquierda1" "derecha2";
   }
-  .grid-explicacion .explicacion {
-    padding-left: 20px;
+  .grid-sobre-mi .derecha, .sobre-mi .grid-sobre-mi .izquierda, .grid-sobre-mi .izquierda {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .grid-sobre-mi .none {
+    display: none;
+  }
+  .grid-explicacion {
+    height: 150px;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas: "p-explicacion";
+  }
+  .grid-explicacion .p-explicacion {
+    padding: 20px;
+  }
+  .grid-explicacion .foto-explicacion {
+    display: none;
   }
   .testimonios {
     height: 850px;
@@ -482,5 +510,13 @@ h1 {
   }
   .testimonios {
     height: 1050px;
+  }
+  .grid-sobre-mi {
+    height: 1400px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .grid-sobre-mi {
+    height: 1600px;
   }
 }/*# sourceMappingURL=style.css.map */

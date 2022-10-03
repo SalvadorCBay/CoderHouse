@@ -5,7 +5,9 @@
 .shadow{
     border-radius: 10%;
 }
-
+.plan:hover{
+    transform: scale(1.1);
+}
 .grid-planes{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
