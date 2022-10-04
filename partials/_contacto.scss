@@ -35,6 +35,22 @@
             color: red;
         }
     }
+    .formulario{
+        label, input, textarea, button{
+            font-family: $fuente-p;
+        }
+        button{
+            padding: 5px;
+            border-radius: 5px;
+            font-family: $fuente-p;
+            background-color: $color-secundario;
+            color:$color-primario;
+            border-color: $color-primario;
+                    
+            &:hover{
+                transform: scale(1.1);
+            }
+    }
 }
-
+}
 

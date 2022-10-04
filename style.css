@@ -115,7 +115,6 @@ h1 {
   padding: 5px;
   border-radius: 5px;
   font-family: "Josefin Sans", sans-serif;
-  cursor: pointer;
   background-color: #4CB1F6;
   color: #005691;
   border-color: #005691;
@@ -258,6 +257,20 @@ h1 {
 }
 .contacto .redes-contacto .fa-envelope:hover {
   color: red;
+}
+.contacto .formulario label, .contacto .formulario input, .contacto .formulario textarea, .contacto .formulario button {
+  font-family: "Josefin Sans", sans-serif;
+}
+.contacto .formulario button {
+  padding: 5px;
+  border-radius: 5px;
+  font-family: "Josefin Sans", sans-serif;
+  background-color: #4CB1F6;
+  color: #005691;
+  border-color: #005691;
+}
+.contacto .formulario button:hover {
+  transform: scale(1.1);
 }
 
 .sobre-mi h1 {
